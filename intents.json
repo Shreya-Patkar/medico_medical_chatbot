@@ -1,0 +1,154 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting,Limit Unhealthy Foods and Eat Healthy Meals",
+        "Have a nice day,Drink Water and Stay Hydrated, and Limit Sugared Beverages",
+        "Bye! See you soon.Exercise Regularly and Be Physically Active"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!Exercise Regularly and Be Physically Active",
+       "Any time!Drink Water and Stay Hydrated, and Limit Sugared Beverages",
+        "My pleasure,Limit Unhealthy Foods and Eat Healthy Meals",
+      "Take care,Keep Track of Your Movement, Sleep, and Heart Rate"]
+    },
+    {
+      "tag": "items",
+      "patterns": ["What is the process for buying items on your website?"],
+      "responses": [
+        "Our website allows you to purchase souvenirs online.Simply select the quantity you wish to purchase, complete the payment process, and we will deliver the souvenir to you."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does medicine delivery take?",
+        "How long does medicine shipping take?",
+        "When do I get my medicine delivery?"
+      ],
+      "responses": ["Delivery takes 2-4 days", "Shipping takes 2-4 days"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "what happened",
+      "patterns": [
+        "I am not feeling well",
+        "I am not well",
+        "I feel ill"
+      ],
+      "responses": [
+        "May i know, exactly what happened to you?",
+        "What problems are you facing?",
+        "Are there any symptoms"
+      ]
+    },
+    {
+      "tag": "doctors",
+      "patterns": [
+        "Are any doctor available?",
+        "Are there any specialist?"
+      ],
+      "responses": [
+        "Yes, Dr.Patel(Heart specialist), Dr.Singhania(orthologist), Dr.Chaturvedi(Dentist) are available on weekdays"
+      ]
+    },
+    {
+      "tag": "appointment",
+      "patterns": [
+        "Can i book appointment for DR.Patel",
+        "Can i book appointment for DR.Singhania",
+        "Can i book appointment for DR.Chaturvedi"
+      ],
+      "responses": [
+        "Yes you can book appoitnment for your selected doctor in given time slots,1.) Tomorrow 9:00AM,2.) Tomorrow 3:00PM,3.) Tomorrow 6:00PM,4.) Tomorrow 9:00PM "
+      ]
+    },
+    {
+      "tag": "time slot selection",
+      "patterns": [
+        "Book at 3:00pm",
+        "Book at 6:00pm",
+        "Book at 9:00pm",
+        "Book at 9:00am"
+      ],
+      "responses": [
+        "Your appointment is booked, Do visit your doctor and Get well soon :) "
+      ]
+    },
+    {
+      "tag": "Illness",
+      "patterns": [
+        "i have headache",
+        "i have toothache",
+        "i have bodyache"
+      ],
+      "responses": [
+        "I am sorry to hear, You can visit our hospital and get yourself checked"
+      ]
+    },
+    {
+      "tag": "Viral",
+      "patterns": [
+        "i have cold and fever "
+      ],
+      "responses": [
+        "Seems like a viral infection ,you should get yourself checked by a doctor"
+      ]
+    },
+    {
+      "tag": "Dood poisioning",
+      "patterns": [
+        "i have stomach ache and vomiting "
+      ],
+      "responses": [
+        "Seems like food posioning ,you should get yourself checked by a doctor"
+      ]
+    }
+  ]
+}
