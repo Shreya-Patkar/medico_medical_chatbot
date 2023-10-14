@@ -39,22 +39,20 @@ class Chatbox {
    
 
 
-  #error handled successfully
-
-
+  /*error handled successfully*/
   onSendButton(chatbox) {
-    var textField = chatbox.querySelector('input');
+    var textField=chatbox.querySelector('input');
     let text1=textField.value;
-    if (text1 ==='') {
+    if (text1==='') {
       return;
     }
 
-    let msg1 = { name:'User',message: text1 };
+    let msg1={name:'User',message:text1 };
     this.messages.push(msg1);
 
     fetch('http://127.0.0.1:5000/predict', {
-      method:'POST',
-      body: SON.stringify({ message: text1 }),
+      method: 'POST',
+      body: SON.stringify({message:text1 }),
       mode:'cors',
       headers: {
         'Content-Type': 'application/json',
@@ -68,11 +66,13 @@ class Chatbox {
         textField.value ='';
       })
       .catch((error) => {
-        console.error('Error:', error);
+        console.error('Error:',error);
         this.updateChatText(chatbox);
         textField.value ='';
       });
-  }
+
+
+    }
 
   updateChatText(chatbox) {
     var html = '';
