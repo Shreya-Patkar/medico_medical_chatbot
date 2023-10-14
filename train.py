@@ -39,18 +39,18 @@ print(len(xy), "patterns")
 print(len(tags), "tags:", tags)
 print(len(all_words), "unique stemmed words:", all_words)
 
-# create training data
+# create training data , init empty list for training
 X_train = []
 y_train = []
 for (pattern_sentence, tag) in xy:
-    # X: bag of words for each pattern_sentence
+    # X: bag of words for each pattern_sentence. appended successfully
     bag = bag_of_words(pattern_sentence, all_words)
     X_train.append(bag)
     # y: PyTorch CrossEntropyLoss needs only class labels, not one-hot
     label = tags.index(tag)
     y_train.append(label)
 
-X_train = np.array(X_train)
+X_train = np.array(X_train)  #trained 
 y_train = np.array(y_train)
 
 # Hyper-parameters 
